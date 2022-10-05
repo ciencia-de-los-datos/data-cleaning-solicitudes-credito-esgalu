@@ -7,6 +7,9 @@ correctamente. Tenga en cuenta datos faltantes y duplicados.
 
 """
 
+import pandas as pd
+from datetime import datetime
+
 def normalize_date(x):
     try:
         return datetime.strptime(x, '%d/%m/%Y')
